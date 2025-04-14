@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'favorite.dart';
+import 'menu.dart';
 void main() {
   runApp(const FigmaToCodeApp());
 }
@@ -333,6 +334,13 @@ class Iphone1415Pro1 extends StatelessWidget {
               Positioned(
                 left: 176,
                 top: 792,
+                child: GestureDetector(
+    onTap: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => FigmaToCodeApp2()),
+      );
+    },
                 child: Container(
                   width: 53,
                   height: 53,
@@ -343,10 +351,18 @@ class Iphone1415Pro1 extends StatelessWidget {
                     ),
                   ),
                 ),
+                ),
               ),
               Positioned(
                 left: 306,
                 top: 792,
+                child: GestureDetector(
+    onTap: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => FigmaToCodeApp3()),
+      );
+    },
                 child: Container(
                   width: 53,
                   height: 53,
@@ -356,6 +372,7 @@ class Iphone1415Pro1 extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                   ),
+                ),
                 ),
               ),
               Positioned(
